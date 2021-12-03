@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <form >
+    <div style=" border: 5px solid black; height:450px; width:700px;
+     margin: 0 auto;padding-left:50px; background-color:moccasin;">
+    <div id="box1">
+
+      <h2>First Name</h2>
+      <input type="text"style="width: 90%; height: 30px; " id="finput" onblur="fname()" onclick="fname_close();">
+     <i class="fa fa-check " style="font-size: 22px; color:green; display: none;" id="tick" ></i>
+    
+      <h2>Email</h2>
+      <input type="email"  style="width: 90%; height: 30px;" id="email" onclick="fname();lname();email_val_close() " onblur="email_val()">
+      <i class="fa fa-check" style="font-size: 22px; color:green; display: none;" id="etick"></i>
+      
+      <h2>Gender</h2>
+      <input type="radio" id="male" name="fav_language" value="Male" style="width: 30px; height: 20px;"onclick="fname();lname();mobile_val();email_val()" >
+      <label style="font-size: 25px;">Male</label>
+      <input type="radio" id="femail" name="fav_language" value="Female" style="width: 30px; height: 20px;" onclick="fname();lname();mobile_val();email_val()">
+      <label style="font-size: 25px;">female</label>
+
+
+      <h2>Password</h2>
+      <input type="password"  style="width: 90%; height: 30px;" id="pass" onblur="password()" onclick="fname();lname();address_val();password_close();mobile_val();email_val()">
+      <i class="fa fa-check" style="font-size: 22px; color:green; display: none;" id="ptick"></i>
+    </div>
+    <div id="box2">
+
+      <h2>Last Name</h2>
+      <input type="text"  style="width: 90%; height: 30px;" id="lastname" onblur="lname()" onclick="fname();lname_close();">
+      <i class="fa fa-check" style="font-size: 22px; color:green; display: none;" id="ltick" ></i>
+      
+      <h2>Mobile no</h2>
+      <input type="mobile" style="width: 90%; height: 30px;" id="mobile" onclick="fname();lname();mobile_val_close();email_val()" onblur="mobile_val()">
+      <i class="fa fa-check" style="font-size: 22px; color:green; display: none;" id="mtick"></i>
+      
+      <h2>Address</h2>
+      <input type="text"  style="width: 90%; height: 30px;" id="address" onclick="fname();lname();address_close();mobile_val();email_val()" onblur="address_val()">
+      <i class="fa fa-check" style="font-size: 22px; color:green; display: none;"id="addtick" ></i>
+      
+      <h2>Confirm password</h2>
+      <input type="password"  style="width: 90%; height: 30px;" id="repass" onclick="fname();lname();address_val();password();mobile_val();email_val()"  onchange="con_pass()">
+      <i class="fa fa-check" style="font-size: 22px; color:green; display: none;" id="contick"></i>
+      
+    </div>
+    <div id="box3">
+      <input type="checkbox" style="width: 18px; height: 18px;" id="tag" onclick="fname();lname();address_val();password();mobile_val();email_val();con_pass()">
+      <label style="font-size: 20px;"> I agree with all the terms and condition.</label>
+    <br><br>
+    <center>
+     <input type="submit" value="Submit"  style="margin-left: 120px;" id="btn" onclick="return demo()">
+      </center>
+    </div>
+    </div>
+  </form>
+</body>
+</html>

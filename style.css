@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+#box1{
+    width: 45%;
+    height: 300px;
+    float: left;
+    
+}
+#box2{
+    width: 45%;
+    height: 300px;
+    float: left;
+   
+}
+#box3{
+    width: 60%;
+    height: 150px;
+    float: left;
+    
+}
+h2{
+    margin: 0;
+    margin-top: 5px;
+}
+#warn,#warn1{
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 35px;
+    display: none;
+}
+input{
+    border: 1px solid #ccc;
+}
+input[type="submit"]{
+    background-color:#ccc;
+    width: 200px;
+    height: 30px;
+    color: black;
+    
+    font-size: 20px;
+}
